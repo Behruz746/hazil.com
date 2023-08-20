@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(130deg, rgb(0, 162, 255), rgb(0, 36, 128)) no-repeat;
+    height: 100vh;
+}
+
+.container {
+
+    button {
+        font-size: 17px;
+        padding: .8em 2em;
+        border: 0;
+        outline: 0;
+        border-radius: .3em;
+        background-color: #fff;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: .1s linear;
+
+        &:hover {
+            background-color: rgb(4, 25, 47);
+            color: #fff;
+        }
+    }
+}
+
+.container--active {
+    width: 300px;
+    height: 150px;
+    background-image: url('./images-soung/photo_2023-06-06_21-35-11.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: .2s linear;
+    transform: scale(5,5);
+}
